@@ -1,0 +1,15 @@
+// config.h.example - copy this file to config.h and fill in your own values.
+// config.h is .gitignore'd so your secrets never leave your machine.
+
+#pragma once
+
+// --- WiFi -------------------------------------------------------------------
+#define WIFI_SSID      "your-wifi-ssid"
+#define WIFI_PASSWORD  "your-wifi-password"
+
+// --- mDNS -------------------------------------------------------------------
+// The board answers at http://<MDNS_HOSTNAME>.local/ - lowercase letters,
+// digits and hyphens only, no dots. Must be unique on your network.
+#define MDNS_HOSTNAME  "fluidwire-node"
+// Friendly name shown by service browsers (Avahi, Bonjour, Service Browser app).
+#define MDNS_INSTANCE  "Fluidwire ESP32 demo node"
